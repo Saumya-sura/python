@@ -1,0 +1,3 @@
+string = "Hello World"
+odd_characters = string[1::2]
+print(odd_characters)

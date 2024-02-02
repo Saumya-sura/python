@@ -1,0 +1,6 @@
+txt = "Hello World"[::-1]
+print(txt)
+
+txt = input("Enter string:")
+a=txt[::-1]
+print(a)

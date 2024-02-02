@@ -1,0 +1,12 @@
+# Import the 'nlargest' function from the 'heapq' module and the 'itemgetter' function from the 'operator' module.
+from heapq import nlargest
+from operator import itemgetter
+
+
+items = {'item1': 45.50, 'item2': 35, 'item3': 41.30, 'item4': 55, 'item5': 24}
+
+
+# The 'key' argument specifies that the second element (price) of each key-value pair should be used for comparison.
+for name, value in nlargest(3, items.items(), key=itemgetter(1)):
+    
+    print(name, value) 

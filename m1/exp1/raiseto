@@ -1,0 +1,9 @@
+#○	Take input from the user in two variables. Perform below operations
+#■	Find remainder
+#■	Perform floor division
+#■	Calculate a raise to b
+num1 = int(input("Enter the 1st number: "))
+num2 = int(input("Enter the 2nd number: "))
+print("The remainder is ", num1 % num2)
+print("The floor division is ", num1 // num2)
+print("The answer for the 1st number raised to 2nd number is ", num1 ** num2)

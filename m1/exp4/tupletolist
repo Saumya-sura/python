@@ -1,0 +1,24 @@
+
+def test(lst_tuples):
+  
+    result = [list(el) for el in lst_tuples]
+    
+   
+    return result
+
+lst_tuples = [(1, 2), (2, 3), (3, 4)]
+
+
+print("Original list of tuples:")
+print(lst_tuples)
+
+print("Convert the said list of tuples to a list of lists:")
+print(test(lst_tuples))
+
+lst_tuples = [(1, 2), (2, 3, 5), (3, 4), (2, 3, 4, 2)]
+
+print("\nOriginal list of tuples:")
+print(lst_tuples)
+
+print("Convert the said list of tuples to a list of lists:")
+print(test(lst_tuples)) 

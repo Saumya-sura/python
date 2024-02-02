@@ -1,0 +1,44 @@
+# Define a function named 'check_in_tuples' that takes a tuple of tuples 'colors' and a string 'c' as input.
+def check_in_tuples(colors, c):
+    # Use the 'any' function to check if the string 'c' is present in any of the inner tuples within 'colors'.
+    result = any(c in tu for tu in colors)
+    
+    # Return the result, which is a Boolean indicating whether 'c' is found in any of the inner tuples.
+    return result
+
+# Create a tuple of tuples 'colors', where each inner tuple represents a group of colors.
+colors = (
+    ('Red', 'White', 'Blue'),
+    ('Green', 'Pink', 'Purple'),
+    ('Orange', 'Yellow', 'Lime'),
+)
+
+# Print a message indicating the original list of color tuples.
+print("Original list:")
+print(colors)
+
+# Define a string 'c1' to check its presence in the color tuples.
+c1 = 'White'
+
+
+print("\nCheck if", c1, "present in said tuple of tuples!")
+
+print(check_in_tuples(colors, c1))
+
+
+c1 = 'White'
+
+
+print("\nCheck if", c1, "present in said tuple of tuples!")
+
+
+print(check_in_tuples(colors, c1))
+
+
+c1 = 'Olive'
+
+
+print("\nCheck if", c1, "present in said tuple of tuples!")
+
+
+print(check_in_tuples(colors, c1))

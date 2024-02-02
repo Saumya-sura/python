@@ -1,0 +1,18 @@
+#j.	Write a program to accept 5 numbers from the user using individual statements. Print the sum, average of the numbers. Check if the sum is less than 100 and print the true false value
+
+
+
+
+num1 = int(input("Enter the 1st number: "))
+num2 = int(input("Enter the 2nd number: "))
+num3 = int(input("Enter the 3rd number: "))
+num4 = int(input("Enter the 4th number: "))
+num5 = int(input("Enter the 5th number: "))
+sum = num1 + num2 + num3 + num4 + num5
+average = (num1 + num2 + num3 + num4 + num5) / 5
+print("The sum of all the numbers is ", sum)
+print("The average of all the number is ", average)
+if sum < 100 :
+    print("The sum is less than 100, so TRUE")
+else :
+    print("The sum is greater than 100, so FALSE")
