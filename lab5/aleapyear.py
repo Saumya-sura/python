@@ -8,7 +8,6 @@ def is_leap_year(year):
         else:
             return True
     else:
-        return False
-    
-print(is_leap_year(2000)) 
-print(is_leap_year(2021)) 
+        return False  
+print(is_leap_year(2000))
+print(is_leap_year(2021))

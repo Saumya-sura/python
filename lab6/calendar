@@ -1,0 +1,8 @@
+import calendar
+
+year=2023
+moth=2
+print(calendar.month(year,moth))
+
+print ("The calendar of year 2018 is : ")
+print (calendar.calendar(2018))

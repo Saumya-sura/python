@@ -1,0 +1,12 @@
+from datetime import date
+from datetime import time
+today = date.today()
+print("Today's date:", today)
+print("Current year:", today.year)
+print("Current month:", today.month)
+
+Time=time(9,13,45)
+print("hour =", Time.hour)
+print("minute =", Time.minute)
+print("second =", Time.second)
+print("microsecond =", Time.microsecond)

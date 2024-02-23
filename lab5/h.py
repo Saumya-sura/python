@@ -1,7 +1,10 @@
-def is_palindrome(string):
- 
-    string = ''.join(e for e in string if e.isalnum()).lower()
-  
-    return string == string[::-1]
+def is_palindrome(word):
+    return word == word[::-1]
 
-print(is_palindrome("sas"))
+user_input = input("Enter a word: ")
+
+if is_palindrome(user_input):
+    print(user_input, "is a palindrome!")
+else:
+    print(user_input, "is not a palindrome.")
+
