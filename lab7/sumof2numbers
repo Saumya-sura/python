@@ -1,0 +1,23 @@
+"""
+Write a Python program that prompts the user to input two numbers and raises a TypeError exception if the inputs are not numerical.
+"""
+
+
+def get_numerical_input(prompt):
+    while True:
+        try:
+            num = float(input(prompt))
+            return num
+        except ValueError:
+            print("Invalid input! Please enter a numerical value.")
+
+try:
+    num1 = get_numerical_input("Enter the first number: ")
+    num2 = get_numerical_input("Enter the second number: ")
+
+    result = num1 + num2
+
+    print("Sum of the two numbers:", result)
+
+except TypeError:
+    print("TypeError: Inputs must be numerical values.")

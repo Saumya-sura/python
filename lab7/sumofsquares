@@ -1,0 +1,22 @@
+"""Write a Python program that calculates sum of square of n integers provided by the user. 
+The program must raise an exception if user enters data of wrong data type.
+
+"""
+
+def sum_of_squares(n):
+    total = 0
+    for _ in range(n):
+        try:
+            num = int(input("Enter an integer: "))
+            total += num ** 2
+        except ValueError:
+            raise ValueError("Invalid input! Please enter an integer.")
+
+    return total
+
+try:
+    n = int(input("How many integers do you want to square and sum? "))
+    result = sum_of_squares(n)
+    print("The sum of the squares of the entered integers is:", result)
+except ValueError as ve:
+    print(ve)

@@ -1,0 +1,20 @@
+"""
+Write a function division() that accepts two arguments. 
+The function should be able to catch an exception such as ZeroDivisionError, ValueError, or any unknown error you 
+might come across when you are doing a division operation.
+"""
+def division(num1,num2):
+    try:
+        result = num1/num2
+        return result
+    except ZeroDivisionError:
+        return "Division by zero is not allowed"
+    except ValueError:
+        return "Error: Invalid input value!"
+    except Exception as e:
+        return f"Error: {e}"
+
+print(division(10, 2))  
+print(division(10, 0))  
+print(division("10", 2))
+print(division(10, '2'))  
